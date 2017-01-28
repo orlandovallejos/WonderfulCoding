@@ -2,7 +2,9 @@ var Example = function (j) {
     this.j = j
 };
 
-Example.prototype.getPropJ = function () {
+//This will be available in every instance created from the Example() function through prototype chain,
+//and not created in every object.
+Example.prototype.getJ = function () {
     return this.j;
 };
 
